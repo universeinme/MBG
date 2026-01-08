@@ -179,3 +179,28 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# UiPath
+# System/Cache Folders:
+*.settings/
+*.local/*
+playwright/*
+
+#(for UI Automation)
+.objects/
+.project/
+
+# Logs & Temp Files:
+*.log/*
+*.tmh/*
+
+#Package/Build Artifacts:
+# (if published locally, not to Orchestrator feed)
+*.nupkg 
+*.cache
+*.props
+
+/email_app/*/*
+*.docx
+*.xlsx
+*.pdf
