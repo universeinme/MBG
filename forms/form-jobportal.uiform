@@ -1,0 +1,32 @@
+﻿{
+  "Metadata": {
+    "Id": "f6f1274a-0c28-476a-bebf-76e6c5bcde34",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "form-jobportal",
+    "Theme": "Default",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "label": "Job Portal URI",
+        "tableView": true,
+        "key": "jobPortalUri",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "type": "button",
+        "label": "Submit",
+        "key": "submit",
+        "disableOnInvalid": true,
+        "input": true,
+        "tableView": false
+      }
+    ]
+  }
+}
