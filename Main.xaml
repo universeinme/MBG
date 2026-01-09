@@ -101,15 +101,16 @@
       <AssemblyReference>System.CodeDom</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1268,1652" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1268,2095" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="486,1629" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="522,2072" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="f_jpURI" />
         <Variable x:TypeArguments="x:String" Name="f_emailSubject" />
@@ -145,7 +146,7 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:MultipleAssign sap2010:Annotation.AnnotationText="Files &amp; Folder Base" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="452,88" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+      <ui:MultipleAssign sap2010:Annotation.AnnotationText="Files &amp; Folder Base" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="488,88" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
         <ui:MultipleAssign.AssignOperations>
           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="16">
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -214,7 +215,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:MultipleAssign>
-      <ui:MultipleAssign sap2010:Annotation.AnnotationText="variable edit lamaran" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="452,88" sap2010:WorkflowViewState.IdRef="MultipleAssign_4">
+      <ui:MultipleAssign sap2010:Annotation.AnnotationText="variable edit lamaran" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="488,88" sap2010:WorkflowViewState.IdRef="MultipleAssign_4">
         <ui:MultipleAssign.AssignOperations>
           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_12">
@@ -251,7 +252,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:MultipleAssign>
-      <ui:MultipleAssign sap2010:Annotation.AnnotationText="Variable Forms" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="452,88" sap2010:WorkflowViewState.IdRef="MultipleAssign_5">
+      <ui:MultipleAssign sap2010:Annotation.AnnotationText="Variable Forms" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="488,88" sap2010:WorkflowViewState.IdRef="MultipleAssign_5">
         <ui:MultipleAssign.AssignOperations>
           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="16">
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_29">
@@ -354,7 +355,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:MultipleAssign>
-      <ui:CommentOut sap2010:Annotation.AnnotationText="Variabel data table" DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="452,88" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut sap2010:Annotation.AnnotationText="Variabel data table" DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="488,88" sap2010:WorkflowViewState.IdRef="CommentOut_1">
         <ui:CommentOut.Body>
           <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="513,231" sap2010:WorkflowViewState.IdRef="Sequence_12">
             <sap:WorkflowViewStateService.ViewState>
@@ -384,7 +385,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:CommentOut>
-      <ui:CommentOut sap2010:Annotation.AnnotationText="Variabel Python: emailModule, emailResult, jpModule, jpResult, netResult" DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="452,102" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+      <ui:CommentOut sap2010:Annotation.AnnotationText="Variabel Python: emailModule, emailResult, jpModule, jpResult, netResult" DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="488,102" sap2010:WorkflowViewState.IdRef="CommentOut_2">
         <ui:CommentOut.Body>
           <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="513,200" sap2010:WorkflowViewState.IdRef="Sequence_13">
             <sap:WorkflowViewStateService.ViewState>
@@ -409,7 +410,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:CommentOut>
-      <ui:MultipleAssign sap2010:Annotation.AnnotationText="variabel non files / folders / berkas / data table &amp; forms: bukaChrome, notif_lamaran: netResult+&quot; &quot;+jp_URI" DisplayName="Global Vars Assigns" sap:VirtualizedContainerService.HintSize="452,118" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+      <ui:MultipleAssign sap2010:Annotation.AnnotationText="variabel non files / folders / berkas / data table &amp; forms: bukaChrome, notif_lamaran: netResult+&quot; &quot;+jp_URI" DisplayName="Global Vars Assigns" sap:VirtualizedContainerService.HintSize="488,118" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
         <ui:MultipleAssign.AssignOperations>
           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="32">
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_21">
@@ -440,15 +441,15 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:MultipleAssign>
-      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="452,974" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="488,1417" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
         <ui:InterruptibleDoWhile.Body>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,852" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="486,1295" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ufa:ShowFormActivity Height="{x:Null}" InstanceName="{x:Null}" Left="{x:Null}" ShowInTaskbar="{x:Null}" ShowMargin="{x:Null}" Title="{x:Null}" Top="{x:Null}" TopMost="{x:Null}" Width="{x:Null}" WindowState="{x:Null}" sap2010:Annotation.AnnotationText="Tampilkan Form Dasar" DisplayName="Show Form" FormId="093abc7c-114c-4ca3-acad-29c68ad64b36" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="ShowFormActivity_1" IsAsync="False">
+            <ufa:ShowFormActivity Height="{x:Null}" InstanceName="{x:Null}" Left="{x:Null}" ShowInTaskbar="{x:Null}" ShowMargin="{x:Null}" Title="{x:Null}" Top="{x:Null}" TopMost="{x:Null}" Width="{x:Null}" WindowState="{x:Null}" sap2010:Annotation.AnnotationText="Tampilkan Form Dasar" DisplayName="Show Form" FormId="093abc7c-114c-4ca3-acad-29c68ad64b36" sap:VirtualizedContainerService.HintSize="452,92" sap2010:WorkflowViewState.IdRef="ShowFormActivity_1" IsAsync="False">
               <ufa:ShowFormActivity.Arguments>
                 <OutArgument x:TypeArguments="x:String" x:Key="namaPerusahaan">[f_perusahaan]</OutArgument>
                 <OutArgument x:TypeArguments="x:String" x:Key="posisi">[f_posisi]</OutArgument>
@@ -464,7 +465,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ufa:ShowFormActivity>
-            <Assign sap2010:Annotation.AnnotationText="Format Tanggal" DisplayName="Assign" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="Assign_1">
+            <Assign sap2010:Annotation.AnnotationText="Format Tanggal" DisplayName="Assign" sap:VirtualizedContainerService.HintSize="452,92" sap2010:WorkflowViewState.IdRef="Assign_1">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[f_tanggal_fmt]</OutArgument>
               </Assign.To>
@@ -479,19 +480,20 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </Assign>
-            <If sap2010:Annotation.AnnotationText="Tampilkan Form Email / Job Portal" Condition="[f_tipe = &quot;email&quot;]" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="If_1">
+            <If sap2010:Annotation.AnnotationText="Tampilkan Form Email / Job Portal" Condition="[f_tipe = &quot;email&quot;]" sap:VirtualizedContainerService.HintSize="452,315" sap2010:WorkflowViewState.IdRef="If_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <If.Then>
-                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,116" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <Sequence DisplayName="Then: Tampil Form Email" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <ufa:ShowFormActivity Height="{x:Null}" InstanceName="{x:Null}" Left="{x:Null}" ShowInTaskbar="{x:Null}" ShowMargin="{x:Null}" Title="{x:Null}" Top="{x:Null}" TopMost="{x:Null}" Width="{x:Null}" WindowState="{x:Null}" DisplayName="Show Form" FormId="b52abcbb-40e5-4c08-9ead-5c2e7806a0aa" sap:VirtualizedContainerService.HintSize="416,52" sap2010:WorkflowViewState.IdRef="ShowFormActivity_2" IsAsync="False">
@@ -509,7 +511,7 @@
                 </Sequence>
               </If.Then>
               <If.Else>
-                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,116" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <Sequence DisplayName="Else: Tampil Form Job Portal" sap:VirtualizedContainerService.HintSize="450,116" sap2010:WorkflowViewState.IdRef="Sequence_5">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -529,7 +531,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <ui:MultipleAssign sap2010:Annotation.AnnotationText="Files &amp; Folders" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="MultipleAssign_8">
+            <ui:MultipleAssign sap2010:Annotation.AnnotationText="Files &amp; Folders" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="452,92" sap2010:WorkflowViewState.IdRef="MultipleAssign_8">
               <ui:MultipleAssign.AssignOperations>
                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_48">
@@ -582,7 +584,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:MultipleAssign>
-            <p:WordApplicationScope SensitivityLabel="{x:Null}" sap2010:Annotation.AnnotationText="Edit Surat Lamaran" DisplayName="Word Application Scope" FilePath="[file_cl_docx]" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="WordApplicationScope_3" SensitivityOperation="None">
+            <p:WordApplicationScope SensitivityLabel="{x:Null}" sap2010:Annotation.AnnotationText="Edit Surat Lamaran" DisplayName="Word Application Scope" FilePath="[file_cl_docx]" sap:VirtualizedContainerService.HintSize="452,92" sap2010:WorkflowViewState.IdRef="WordApplicationScope_3" SensitivityOperation="None">
               <p:WordApplicationScope.Body>
                 <ActivityAction x:TypeArguments="ui:WordDocument">
                   <ActivityAction.Argument>
@@ -687,7 +689,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </p:WordApplicationScope>
-            <p:WordApplicationScope SensitivityLabel="{x:Null}" sap2010:Annotation.AnnotationText="Edit CV" DisplayName="Word Application Scope" FilePath="[file_cv_docx]" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="WordApplicationScope_2" SensitivityOperation="None">
+            <p:WordApplicationScope SensitivityLabel="{x:Null}" sap2010:Annotation.AnnotationText="Edit CV" DisplayName="Word Application Scope" FilePath="[file_cv_docx]" sap:VirtualizedContainerService.HintSize="452,92" sap2010:WorkflowViewState.IdRef="WordApplicationScope_2" SensitivityOperation="None">
               <p:WordApplicationScope.Body>
                 <ActivityAction x:TypeArguments="ui:WordDocument">
                   <ActivityAction.Argument>
@@ -718,7 +720,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </p:WordApplicationScope>
-            <ui:MultipleAssign sap2010:Annotation.AnnotationText="Body Email" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
+            <ui:MultipleAssign sap2010:Annotation.AnnotationText="Body Email" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="452,88" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
               <ui:MultipleAssign.AssignOperations>
                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_42">
@@ -739,7 +741,36 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:MultipleAssign>
-            <ui:CommentOut sap2010:Annotation.AnnotationText="Debug Email Body" DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="CommentOut_7">
+            <If sap2010:Annotation.AnnotationText="Kirim Email / Buka Browser" Condition="[f_tipe = &quot;email&quot;]" sap:VirtualizedContainerService.HintSize="452,224" sap2010:WorkflowViewState.IdRef="If_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If.Then>
+                <Sequence DisplayName="Then: Kirim Email" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else: Buka Browser" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+            <ui:CommentOut sap2010:Annotation.AnnotationText="Debug Email Body" DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="452,92" sap2010:WorkflowViewState.IdRef="CommentOut_7">
               <ui:CommentOut.Body>
                 <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,139" sap2010:WorkflowViewState.IdRef="Sequence_18">
                   <sap:WorkflowViewStateService.ViewState>
@@ -766,7 +797,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
-            <ui:InputDialog OptionsString="{x:Null}" DisplayName="Informasi" sap:VirtualizedContainerService.HintSize="416,52" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Mau Melamar Kerja Lagi?" Options="[{&quot;Ya&quot;, &quot;Tidak&quot;}]" Title="Informasi" TopMost="False">
+            <ui:InputDialog OptionsString="{x:Null}" DisplayName="Informasi" sap:VirtualizedContainerService.HintSize="452,52" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Mau Melamar Kerja Lagi?" Options="[{&quot;Ya&quot;, &quot;Tidak&quot;}]" Title="Informasi" TopMost="False">
               <ui:InputDialog.Result>
                 <OutArgument x:TypeArguments="x:String">[pu_lanjut]</OutArgument>
               </ui:InputDialog.Result>
