@@ -1,0 +1,98 @@
+﻿{
+  "Metadata": {
+    "Id": "093abc7c-114c-4ca3-acad-29c68ad64b36",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "form-tipelamaran",
+    "Theme": "Default",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "tag": "h2",
+        "content": "Form Informasi Loker",
+        "key": "label",
+        "input": false,
+        "tableView": false,
+        "label": "Label",
+        "type": "label"
+      },
+      {
+        "label": "Nama Perusahaan",
+        "tableView": true,
+        "key": "namaPerusahaan",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "Posisi",
+        "tableView": true,
+        "key": "posisi",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "Sumber Info Loker",
+        "tableView": true,
+        "key": "sumber",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "Tanggal",
+        "hideInputLabels": false,
+        "inputsLabelPosition": "top",
+        "tableView": false,
+        "fields": {
+          "day": {
+            "hide": false
+          },
+          "month": {
+            "hide": false
+          },
+          "year": {
+            "hide": false,
+            "minYear": 2026
+          }
+        },
+        "key": "tanggal",
+        "type": "day",
+        "input": true,
+        "minYear": 2026
+      },
+      {
+        "label": "Tipe Lamaran",
+        "optionsLabelPosition": "right",
+        "inline": false,
+        "tableView": false,
+        "values": [
+          {
+            "label": "Email",
+            "value": "email",
+            "shortcut": ""
+          },
+          {
+            "label": "Job Portal",
+            "value": "jobPortal",
+            "shortcut": ""
+          }
+        ],
+        "key": "tipe",
+        "type": "radio",
+        "input": true
+      },
+      {
+        "type": "button",
+        "label": "Submit",
+        "key": "submit",
+        "disableOnInvalid": true,
+        "input": true,
+        "tableView": false
+      }
+    ]
+  }
+}
