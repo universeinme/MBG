@@ -1,0 +1,48 @@
+﻿{
+  "Metadata": {
+    "Id": "b52abcbb-40e5-4c08-9ead-5c2e7806a0aa",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "form-email",
+    "Theme": "Default",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "tag": "h2",
+        "content": "Form Email",
+        "key": "label",
+        "input": false,
+        "tableView": false,
+        "label": "Label",
+        "type": "label"
+      },
+      {
+        "label": "Email HR / Perusahaan",
+        "tableView": true,
+        "key": "emailHr",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "Subjek Email",
+        "tableView": true,
+        "key": "subjek",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "type": "button",
+        "label": "Submit",
+        "key": "submit",
+        "disableOnInvalid": true,
+        "input": true,
+        "tableView": false
+      }
+    ]
+  }
+}
