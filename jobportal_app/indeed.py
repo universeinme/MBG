@@ -1,0 +1,77 @@
+# Failed to bot checked passing
+
+from playwright.sync_api import sync_playwright
+# tambah watchdog untuk live reload
+from watchdog.observers import Observer
+from watchdog.events import FileSystemEventHandler
+import time
+import os
+
+url = input("Masukkan URL yang ingin dibuka: ").strip()
+
+class ReloadOnChange(FileSystemEventHandler):
+    def __init__(self, page):
+        self.page = page
+        self.last_reload = 0
+
+    def on_modified(self, event):
+        if not event.src_path.endswith(".py"):
+            return
+
+        now = time.time()
+        if now - self.last_reload > 1:
+            print("Reload browser")
+            self.page.reload()
+            self.last_reload = now
+
+# Base directory for all Chrome user data
+user_data_dir=os.path.join(os.getcwd(), "playwright")
+
+with sync_playwright() as p:
+    # Launch persistent context
+    context = p.chromium.launch_persistent_context(
+        user_data_dir=user_data_dir,
+        channel="chrome", # Use the branded Google Chrome
+        headless=False
+    )
+    
+    page = context.new_page()
+    page.goto(url, wait_until="domcontentloaded")
+
+    page.pause()
+
+    # 1. Klik Tombol Lamar
+    page.locator("div[class='jobsearch-IndeedApplyButton-contentWrapper']").click()
+
+    # 2. Masukkan Alamat
+    page.locator("button[type='button']").click()
+
+    # 3. Resume
+    page.locator("button[type='button']").click()
+
+    # 4. Jawab Pertanyaan
+
+    # 5. Kirim Lamaran
+    # <button role="button" type="submit" name="submit-application" data-testid="submit-application-button" class="mosaic-provider-module-apply-preview-6ja1uy e8ju0x50"><span>Submit your application</span></button>
+    
+
+
+    def on_close():
+        print("Browser ditutup → program berhenti")
+        observer.stop()
+        sys.exit(0)
+
+    context.on("close", on_close)
+
+    observer = Observer()
+    observer.schedule(ReloadOnChange(page), ".", recursive=True)
+    observer.start()
+
+    print("Watching file changes... (Ctrl+C to stop)")
+    try:
+        while True:
+            time.sleep(1)
+    except KeyboardInterrupt:
+        observer.stop()
+
+    observer.join()
