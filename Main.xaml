@@ -114,13 +114,13 @@
       <AssemblyReference>UiPath.Excel</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1841,2347" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1841,2255" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="486,2324" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="486,2232" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="f_jpURI" />
         <Variable x:TypeArguments="x:String" Name="f_emailSubject" />
@@ -477,9 +477,9 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:MultipleAssign>
-      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="452,1519" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="452,1427" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
         <ui:InterruptibleDoWhile.Body>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,1388" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,1296" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <Sequence.Variables>
               <Variable x:TypeArguments="sd:DataTable" Name="dt_tracker" />
             </Sequence.Variables>
@@ -1016,33 +1016,6 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:MessageBox>
-            <ui:CommentOut sap2010:Annotation.AnnotationText="Debug Email Body" DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="CommentOut_7">
-              <ui:CommentOut.Body>
-                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,139" sap2010:WorkflowViewState.IdRef="Sequence_18">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" sap2010:Annotation.AnnotationText="Debug email Body" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,79" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[f_emailBody]">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </ui:MessageBox>
-                </Sequence>
-              </ui:CommentOut.Body>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </ui:CommentOut>
             <ui:InputDialog OptionsString="{x:Null}" sap2010:Annotation.AnnotationText="Pop Up Input Lamaran Lagi" DisplayName="Informasi" sap:VirtualizedContainerService.HintSize="416,79" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Mau Melamar Kerja Lagi?" Options="[{&quot;Ya&quot;, &quot;Tidak&quot;}]" Title="Informasi" TopMost="False">
               <ui:InputDialog.Result>
                 <OutArgument x:TypeArguments="x:String">[pu_lanjut]</OutArgument>
