@@ -4,8 +4,11 @@
   "description": "Singkatan dari Mari Bekerja Guys.\r\nDibuat untuk membantu para pencaker seperti si pembuat biar banyak acara lainnya yang bisa ke handel.",
   "main": "Main.xaml",
   "dependencies": {
+    "UiPath.DocumentUnderstanding.Digitizer": "[4.9.4]",
     "UiPath.Excel.Activities": "[3.3.1]",
     "UiPath.Form.Activities": "[25.10.0]",
+    "UiPath.IntelligentOCR.Activities": "[6.27.2]",
+    "UiPath.OmniPage.Activities": "[1.22.2]",
     "UiPath.Python.Activities": "[2.0.0-preview]",
     "UiPath.System.Activities": "[25.10.4]",
     "UiPath.UIAutomation.Activities": "[25.10.24]",
