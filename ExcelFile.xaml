@@ -43,6 +43,7 @@
       <x:String>UiPath.Word.Activities</x:String>
       <x:String>UiPath.Python</x:String>
       <x:String>UiPath.Python.Activities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -116,13 +117,13 @@
       <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ExcelFile" sap:VirtualizedContainerService.HintSize="628,1022" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ExcelFile" sap:VirtualizedContainerService.HintSize="628,1300" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap2010:Annotation.AnnotationText="Menggunakan File Excel" sap:VirtualizedContainerService.HintSize="450,999" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap2010:Annotation.AnnotationText="Menggunakan File Excel" sap:VirtualizedContainerService.HintSize="450,1277" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="xcl_folder_tmplts" />
         <Variable x:TypeArguments="x:String" Name="xcl_file_excel" />
@@ -142,7 +143,6 @@
         <Variable x:TypeArguments="x:String" Name="xcl_subjek" />
         <Variable x:TypeArguments="x:String" Name="xcl_uri" />
         <Variable x:TypeArguments="sd:DataTable" Name="dt_xcl" />
-        <Variable x:TypeArguments="sd:DataTable" Name="dt_excel" />
         <Variable x:TypeArguments="x:String" Name="xcl_file_e_cl_docx" />
         <Variable x:TypeArguments="x:String" Name="xcl_file_e_cl_pdf" />
         <Variable x:TypeArguments="x:String" Name="xcl_file_jp_cl_pdf" />
@@ -827,7 +827,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </p1:PythonScope>
-            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" sap2010:Annotation.AnnotationText="Notif Email Terkirim" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,83" sap2010:WorkflowViewState.IdRef="MessageBox_7" Text="[xcl_notifEmail]">
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" sap2010:Annotation.AnnotationText="Notif Email Terkirim" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="MessageBox_7" Text="[xcl_notifEmail]">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -836,13 +836,23 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:MessageBox>
+            <ui:AddDataRow DataRow="{x:Null}" sap2010:Annotation.AnnotationText="Input data row" ArrayRow="[{xcl_perusahaan,xcl_posisi,xcl_sumber,xcl_tanggalapply,xcl_notifEmail,xcl_file_e_cl_pdf,xcl_file_cv_pdf,xcl_email,xcl_uri}]" DataTable="[dt_xcl]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="416,83" sap2010:WorkflowViewState.IdRef="AddDataRow_1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:AddDataRow>
           </Sequence>
         </If.Then>
         <If.Else>
-          <Sequence DisplayName="Else: Buka Browser" sap:VirtualizedContainerService.HintSize="450,357" sap2010:WorkflowViewState.IdRef="Sequence_20">
+          <Sequence DisplayName="Else: Buka Browser" sap:VirtualizedContainerService.HintSize="450,453" sap2010:WorkflowViewState.IdRef="Sequence_20">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <ui:StartProcess WorkingDirectory="{x:Null}" sap2010:Annotation.AnnotationText="Buka CMD dan Chrome" Arguments="[xcl_bukaChrome]" DisplayName="Start Process" FileName="cmd.exe" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="StartProcess_1">
@@ -862,7 +872,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </Delay>
-            <p1:PythonScope OperationTimeout="{x:Null}" DisplayName="Python Scope" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="PythonScope_2" LibraryPath="[Environment.ExpandEnvironmentVariables(&quot;%USERPROFILE%\AppData\Local\Programs\Python\Python38\Lib&quot;)]" Path="[Environment.ExpandEnvironmentVariables(&quot;%USERPROFILE%\AppData\Local\Programs\Python\Python38&quot;)]" Version="Python 3.8">
+            <p1:PythonScope OperationTimeout="{x:Null}" DisplayName="Python Scope" sap:VirtualizedContainerService.HintSize="416,61" sap2010:WorkflowViewState.IdRef="PythonScope_2" LibraryPath="[Environment.ExpandEnvironmentVariables(&quot;%USERPROFILE%\AppData\Local\Programs\Python\Python38\Lib&quot;)]" Path="[Environment.ExpandEnvironmentVariables(&quot;%USERPROFILE%\AppData\Local\Programs\Python\Python38&quot;)]" Version="Python 3.8">
               <p1:PythonScope.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
@@ -912,7 +922,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </p1:PythonScope>
-            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" sap2010:Annotation.AnnotationText="Notif Browser" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,83" sap2010:WorkflowViewState.IdRef="MessageBox_8" Text="[xcl_notifBrowser]">
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" sap2010:Annotation.AnnotationText="Notif Browser" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="MessageBox_8" Text="[xcl_notifBrowser]">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -921,21 +931,84 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:MessageBox>
+            <ui:AddDataRow DataRow="{x:Null}" sap2010:Annotation.AnnotationText="Input data row" ArrayRow="[{xcl_perusahaan,xcl_posisi,xcl_sumber,xcl_tanggalapply,xcl_notifBrowser,xcl_file_e_cl_pdf,xcl_file_cv_pdf,xcl_email,xcl_uri}]" DataTable="[dt_xcl]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="416,83" sap2010:WorkflowViewState.IdRef="AddDataRow_2">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:AddDataRow>
           </Sequence>
         </If.Else>
       </If>
-      <ui:CommentOut sap2010:Annotation.AnnotationText="Debug: Message Dialog" DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,79" sap2010:WorkflowViewState.IdRef="CommentOut_8">
-        <ui:CommentOut.Body>
-          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,108" sap2010:WorkflowViewState.IdRef="Sequence_18">
+      <ui:AppendRange WorkbookPathResource="{x:Null}" sap2010:Annotation.AnnotationText="Input data ke Excel" DataTable="[dt_xcl]" DisplayName="Append Range Workbook" sap:VirtualizedContainerService.HintSize="416,88" sap2010:WorkflowViewState.IdRef="AppendRange_1" SheetName="tracker" WorkbookPath="[xcl_file_excel]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:AppendRange>
+      <ui:MessageBox ChosenButton="{x:Null}" sap2010:Annotation.AnnotationText="Notif Selesai input tracker" AutoCloseAfter="00:00:00" Caption="Informasi" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,88" sap2010:WorkflowViewState.IdRef="MessageBox_9" Text="[&quot;Berhasil Menulis catatan tracker&quot;]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:MessageBox>
+      <Switch x:TypeArguments="x:Boolean" sap2010:Annotation.AnnotationText="kalo dari jobportal, tidak lanjut lagi, close chrome sama cmd" DisplayName="Switch" Expression="[Not String.IsNullOrEmpty(xcl_email.Trim)]" sap:VirtualizedContainerService.HintSize="416,102" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+        <Switch.Default>
+          <Sequence DisplayName="Default" sap:VirtualizedContainerService.HintSize="450,239" sap2010:WorkflowViewState.IdRef="Sequence_25">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[xcl_perusahaan+xcl_posisi+xcl_sumber+xcl_tanggalapply+xcl_status+xcl_filepathlamaran+xcl_filepathcv+xcl_email+xcl_subjek+xcl_uri]">
+            <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" sap2010:Annotation.AnnotationText="Close Chrome" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="chrome">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:KillProcess>
+            <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" sap2010:Annotation.AnnotationText="Kill cmd" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="416,83" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="cmd">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:KillProcess>
+          </Sequence>
+        </Switch.Default>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Switch>
+      <ui:CommentOut sap2010:Annotation.AnnotationText="Debug: Message Dialog" DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,79" sap2010:WorkflowViewState.IdRef="CommentOut_8">
+        <ui:CommentOut.Body>
+          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,174" sap2010:WorkflowViewState.IdRef="Sequence_18">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[xcl_perusahaan+xcl_posisi+xcl_sumber+xcl_tanggalapply+xcl_status+xcl_filepathlamaran+xcl_filepathcv+xcl_email+xcl_subjek+xcl_uri]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
